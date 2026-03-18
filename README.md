@@ -32,14 +32,8 @@ torchrun --nproc_per_node=2 lua_llama.py \
     --use_bf16 True \
     --out_dir ../output/llama2-7b \
     --weight_proxy "../wanda/llama2-7b-metric.pt"
-
-python load_eval_llama.py \
-    --hf_model ../model/Llama-2-7b \
-    --p 0.4 \
-    --out_dir ../output/llama2-7b \
-    --weight_proxy "../wanda/llama2-7b-metric.pt"
 ```
-
+TODO: Save trained parameters.
 
 ## Acknowledgement
 
